@@ -71,7 +71,7 @@ extract_metadata() {
     
     echo "{
   \"name\": \"$script_name\",
-  \"file\": \"$script_file\",
+  \"file\": \"$script_name.sh\",
   \"description\": \"$description\",
   \"category\": \"$category\",
   \"interactive\": $interactive,

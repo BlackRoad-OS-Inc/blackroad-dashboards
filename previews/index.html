@@ -479,7 +479,7 @@
         };
 
         // Load templates data
-        fetch('previews/templates.json')
+        fetch('templates.json')
             .then(response => response.json())
             .then(data => {
                 templates = data;
@@ -556,7 +556,7 @@
             description.textContent = template.description || 'No description available';
 
             // Try to load visual preview first
-            const screenshotFile = `previews/screenshots/${template.name}.txt`;
+            const screenshotFile = `screenshots/${template.name}.txt`;
             fetch(screenshotFile)
                 .then(response => {
                     if (response.ok) {
@@ -570,7 +570,7 @@
                 })
                 .catch(() => {
                     // Fall back to script source
-                    fetch(template.file)
+                    fetch(`../${template.file}`)
                         .then(response => response.text())
                         .then(scriptContent => {
                             const lines = scriptContent.split('\n').slice(0, 50);

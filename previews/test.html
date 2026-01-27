@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Preview System Test</title>
+    <style>
+        body {
+            font-family: monospace;
+            background: #0a0a12;
+            color: #fff;
+            padding: 2rem;
+        }
+        .success { color: #14f195; }
+        .error { color: #ff006b; }
+        pre {
+            background: #1a1a2e;
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 Preview System Test</h1>
+    
+    <h2>Testing JSON Load:</h2>
+    <div id="jsonStatus">Loading...</div>
+    <pre id="jsonPreview"></pre>
+    
+    <h2>Testing Screenshot Load:</h2>
+    <div id="screenshotStatus">Loading...</div>
+    <pre id="screenshotPreview"></pre>
+    
+    <script>
+        // Test JSON loading
+        fetch('templates.json')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('jsonStatus').innerHTML = '<span class="success">✓ JSON loaded successfully</span>';
+                document.getElementById('jsonPreview').textContent = 
+                    `Total templates: ${data.length}\n` +
+                    `First template: ${data[0].name}\n` +
+                    `Categories: ${[...new Set(data.map(t => t.category))].join(', ')}`;
+            })
+            .catch(error => {
+                document.getElementById('jsonStatus').innerHTML = '<span class="error">✗ Failed to load JSON: ' + error + '</span>';
+            });
+        
+        // Test screenshot loading
+        fetch('screenshots/blackroad-dashboard.txt')
+            .then(response => response.text())
+            .then(text => {
+                document.getElementById('screenshotStatus').innerHTML = '<span class="success">✓ Screenshot loaded successfully</span>';
+                document.getElementById('screenshotPreview').textContent = text.substring(0, 500) + '\n... (truncated)';
+            })
+            .catch(error => {
+                document.getElementById('screenshotStatus').innerHTML = '<span class="error">✗ Failed to load screenshot: ' + error + '</span>';
+            });
+    </script>
+</body>
+</html>
