@@ -206,10 +206,30 @@ The setup wizard will guide you through:
 # Interactive dashboard launcher
 ./launch.sh
 
+# Or browse all templates with visual previews:
+./preview-browser.sh              # 115+ templates with search & filter
+
 # Or run directly:
 ./blackroad-ultimate.sh --watch     # ULTIMATE edition
 ./blackroad-os95.sh --boot          # Windows 95 edition
 ```
+
+### 🌐 Browse All Templates
+
+New! Visual preview browser for all 115+ dashboard templates:
+
+```bash
+./preview-browser.sh
+```
+
+Features:
+- 🔍 **Search** by name or description
+- 📊 **Filter** by category (Core, Monitoring, AI, Crypto, etc.)
+- 👁️ **Preview** with full ANSI colors
+- 🏷️ **Badges** for Interactive, Sound, API features
+- 🚀 **Launch** directly from browser
+
+See [PREVIEW_SYSTEM.md](PREVIEW_SYSTEM.md) for complete documentation.
 
 ---
 
