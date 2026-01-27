@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackRoad OS - Dashboard Templates</title>
+    <script src="https://cdn.jsdelivr.net/npm/ansi_up@5.2.1/ansi_up.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-deep: #0a0a12;
+            --bg-surface: #121220;
+            --bg-elevated: #1a1a2e;
+            --bg-card: #222238;
+            --orange: #f7931a;
+            --pink: #e91e8c;
+            --purple: #9945ff;
+            --blue: #14f195;
+            --cyan: #00d4ff;
+            --text-primary: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.6);
+            --text-muted: rgba(255, 255, 255, 0.3);
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-surface) 100%);
+            color: var(--text-primary);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: var(--bg-elevated);
+            border: 2px solid var(--orange);
+            border-radius: 12px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(90deg, var(--orange), var(--pink), var(--purple), var(--blue), var(--cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        .controls {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background: var(--bg-elevated);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: var(--purple);
+            box-shadow: 0 0 0 3px rgba(153, 69, 255, 0.1);
+        }
+
+        .filter-buttons {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.5rem 1rem;
+            background: var(--bg-elevated);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .filter-btn:hover {
+            background: var(--bg-card);
+            color: var(--text-primary);
+        }
+
+        .filter-btn.active {
+            background: var(--purple);
+            color: var(--text-primary);
+            border-color: var(--purple);
+        }
+
+        .stats {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .stat-card {
+            flex: 1;
+            min-width: 150px;
+            padding: 1rem;
+            background: var(--bg-elevated);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .stat-card .number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--orange);
+        }
+
+        .stat-card .label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: 0.25rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--orange), var(--pink), var(--purple));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--purple);
+            box-shadow: 0 8px 24px rgba(153, 69, 255, 0.2);
+        }
+
+        .card:hover::before {
+            opacity: 1;
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .card-icon {
+            font-size: 2rem;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            flex: 1;
+        }
+
+        .card-description {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+            min-height: 2.7rem;
+        }
+
+        .card-meta {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            background: rgba(153, 69, 255, 0.2);
+            color: var(--purple);
+            border: 1px solid rgba(153, 69, 255, 0.3);
+        }
+
+        .badge.category {
+            background: rgba(247, 147, 26, 0.2);
+            color: var(--orange);
+            border-color: rgba(247, 147, 26, 0.3);
+        }
+
+        .badge.interactive {
+            background: rgba(20, 241, 149, 0.2);
+            color: var(--blue);
+            border-color: rgba(20, 241, 149, 0.3);
+        }
+
+        .badge.sound {
+            background: rgba(233, 30, 140, 0.2);
+            color: var(--pink);
+            border-color: rgba(233, 30, 140, 0.3);
+        }
+
+        .badge.api {
+            background: rgba(0, 212, 255, 0.2);
+            color: var(--cyan);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(10, 10, 18, 0.95);
+            z-index: 1000;
+            overflow-y: auto;
+            padding: 2rem;
+        }
+
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background: var(--bg-elevated);
+            border: 2px solid var(--purple);
+            border-radius: 16px;
+            padding: 2rem;
+            max-width: 900px;
+            width: 100%;
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .modal-close:hover {
+            background: var(--purple);
+            border-color: var(--purple);
+        }
+
+        .modal-header {
+            margin-bottom: 1.5rem;
+        }
+
+        .modal-title {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .modal-description {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .preview-container {
+            background: #000;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            line-height: 1.3;
+            color: #fff;
+            overflow-x: auto;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+
+        .preview-container pre {
+            margin: 0;
+            white-space: pre;
+            font-family: inherit;
+        }
+        
+        #previewContent {
+            white-space: pre;
+            font-family: inherit;
+        }
+
+        .modal-actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            flex: 1;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--purple), var(--pink));
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(153, 69, 255, 0.4);
+        }
+
+        .btn-secondary {
+            background: var(--bg-card);
+            color: var(--text-primary);
+            border: 1px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            background: var(--bg-elevated);
+            border-color: var(--purple);
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: var(--text-secondary);
+        }
+
+        .no-results h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>👻 BLACKROAD OS Dashboards</h1>
+        <p>Browse 115+ beautiful terminal dashboards • Click to preview</p>
+    </div>
+
+    <div class="controls">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="🔍 Search templates...">
+        </div>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="core">Core</button>
+            <button class="filter-btn" data-category="monitoring">Monitoring</button>
+            <button class="filter-btn" data-category="ai">AI</button>
+            <button class="filter-btn" data-category="crypto">Crypto</button>
+            <button class="filter-btn" data-category="infrastructure">Infrastructure</button>
+            <button class="filter-btn" data-category="visualization">Visualization</button>
+            <button class="filter-btn" data-category="security">Security</button>
+            <button class="filter-btn" data-category="scifi">Sci-Fi</button>
+        </div>
+    </div>
+
+    <div class="stats">
+        <div class="stat-card">
+            <div class="number" id="totalCount">115</div>
+            <div class="label">Total Templates</div>
+        </div>
+        <div class="stat-card">
+            <div class="number" id="filteredCount">115</div>
+            <div class="label">Showing</div>
+        </div>
+        <div class="stat-card">
+            <div class="number" id="interactiveCount">0</div>
+            <div class="label">Interactive</div>
+        </div>
+    </div>
+
+    <div class="grid" id="templatesGrid"></div>
+
+    <div class="no-results" id="noResults" style="display: none;">
+        <h3>No templates found</h3>
+        <p>Try adjusting your search or filters</p>
+    </div>
+
+    <div class="modal" id="previewModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <div class="modal-header">
+                <div class="modal-title" id="modalTitle"></div>
+                <div class="modal-description" id="modalDescription"></div>
+            </div>
+            <div class="preview-container" id="previewContainer">
+                <pre id="previewContent">Loading preview...</pre>
+            </div>
+            <div class="modal-actions">
+                <button class="btn btn-secondary" onclick="closeModal()">Close</button>
+                <button class="btn btn-primary" onclick="launchDashboard()">🚀 Launch Dashboard</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let templates = [];
+        let currentFilter = 'all';
+        let currentSearch = '';
+        let selectedTemplate = null;
+        const ansi_up = new AnsiUp();
+
+        // Category icons
+        const categoryIcons = {
+            core: '👻',
+            monitoring: '📊',
+            ai: '🤖',
+            crypto: '₿',
+            infrastructure: '🔧',
+            visualization: '📈',
+            security: '🔒',
+            scifi: '🚀',
+            general: '⚡'
+        };
+
+        // Load templates data
+        fetch('previews/templates.json')
+            .then(response => response.json())
+            .then(data => {
+                templates = data;
+                renderTemplates();
+                updateStats();
+            })
+            .catch(error => {
+                console.error('Error loading templates:', error);
+            });
+
+        function renderTemplates() {
+            const grid = document.getElementById('templatesGrid');
+            const noResults = document.getElementById('noResults');
+            grid.innerHTML = '';
+
+            const filtered = templates.filter(template => {
+                const matchesCategory = currentFilter === 'all' || template.category === currentFilter;
+                const matchesSearch = currentSearch === '' || 
+                    template.name.toLowerCase().includes(currentSearch.toLowerCase()) ||
+                    template.description.toLowerCase().includes(currentSearch.toLowerCase());
+                return matchesCategory && matchesSearch;
+            });
+
+            if (filtered.length === 0) {
+                grid.style.display = 'none';
+                noResults.style.display = 'block';
+            } else {
+                grid.style.display = 'grid';
+                noResults.style.display = 'none';
+            }
+
+            filtered.forEach(template => {
+                const card = createTemplateCard(template);
+                grid.appendChild(card);
+            });
+
+            document.getElementById('filteredCount').textContent = filtered.length;
+        }
+
+        function createTemplateCard(template) {
+            const card = document.createElement('div');
+            card.className = 'card';
+            card.onclick = () => showPreview(template);
+
+            const icon = categoryIcons[template.category] || '⚡';
+            
+            let badges = `<span class="badge category">${template.category}</span>`;
+            if (template.interactive) badges += '<span class="badge interactive">Interactive</span>';
+            if (template.has_sound) badges += '<span class="badge sound">🔊 Sound</span>';
+            if (template.has_api) badges += '<span class="badge api">API</span>';
+
+            card.innerHTML = `
+                <div class="card-header">
+                    <div class="card-icon">${icon}</div>
+                    <div class="card-title">${template.name}</div>
+                </div>
+                <div class="card-description">${template.description || 'No description available'}</div>
+                <div class="card-meta">
+                    ${badges}
+                </div>
+            `;
+
+            return card;
+        }
+
+        function showPreview(template) {
+            selectedTemplate = template;
+            const modal = document.getElementById('previewModal');
+            const title = document.getElementById('modalTitle');
+            const description = document.getElementById('modalDescription');
+            const content = document.getElementById('previewContent');
+
+            title.textContent = template.name;
+            description.textContent = template.description || 'No description available';
+
+            // Try to load visual preview first
+            const screenshotFile = `previews/screenshots/${template.name}.txt`;
+            fetch(screenshotFile)
+                .then(response => {
+                    if (response.ok) {
+                        return response.text();
+                    }
+                    throw new Error('No screenshot available');
+                })
+                .then(previewText => {
+                    // Use ansi_up to convert ANSI codes to HTML
+                    content.innerHTML = ansi_up.ansi_to_html(previewText);
+                })
+                .catch(() => {
+                    // Fall back to script source
+                    fetch(template.file)
+                        .then(response => response.text())
+                        .then(scriptContent => {
+                            const lines = scriptContent.split('\n').slice(0, 50);
+                            content.textContent = lines.join('\n') + '\n\n... (truncated)';
+                        })
+                        .catch(error => {
+                            content.textContent = 'Preview not available';
+                        });
+                });
+
+            modal.classList.add('active');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('previewModal');
+            modal.classList.remove('active');
+            selectedTemplate = null;
+        }
+
+        function launchDashboard() {
+            if (selectedTemplate) {
+                alert(`To launch this dashboard, run:\n\n./${selectedTemplate.name}.sh`);
+            }
+        }
+
+        function updateStats() {
+            const interactiveCount = templates.filter(t => t.interactive).length;
+            document.getElementById('totalCount').textContent = templates.length;
+            document.getElementById('interactiveCount').textContent = interactiveCount;
+        }
+
+        // Search functionality
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            currentSearch = e.target.value;
+            renderTemplates();
+        });
+
+        // Filter buttons
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentFilter = btn.dataset.category;
+                renderTemplates();
+            });
+        });
+
+        // Close modal on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // Close modal on background click
+        document.getElementById('previewModal').addEventListener('click', (e) => {
+            if (e.target.id === 'previewModal') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>

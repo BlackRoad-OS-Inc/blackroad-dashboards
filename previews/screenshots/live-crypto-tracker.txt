@@ -1,0 +1,13 @@
+[H[2J
+╔════════════════════════════════════════════════════════════════════════╗
+║  💰 LIVE CRYPTO PORTFOLIO TRACKER                                   ║
+╚════════════════════════════════════════════════════════════════════════╝
+
+  Last Update: 2026-01-27 20:08:33 UTC
+
+Fetching live prices from CoinGecko...
+
+Error: Unable to fetch crypto prices
+Check your internet connection or API availability
+
+Press Q to quit, R to retry...

@@ -1,0 +1,1152 @@
+[
+{
+  "name": "3d-graphics-engine",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/3d-graphics-engine.sh",
+  "description": "BlackRoad OS - 3D Terminal Graphics Engine Render 3D objects in ASCII art 3D point rotation ",
+  "category": "visualization",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "advanced-charts",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/advanced-charts.sh",
+  "description": "BlackRoad OS - Advanced Charts System Beautiful ASCII charts with real data Chart characters Generate time-series data (simulated real metrics) ",
+  "category": "visualization",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "agent-detail",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/agent-detail.sh",
+  "description": "BlackRoad OS - Agent Detail Viewer Individual agent inspection with live logs, resources, and configuration Color definitions (RGB values matching web UI) Accent colors Text colors ",
+  "category": "ai",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "agent-network-map",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/agent-network-map.sh",
+  "description": "BlackRoad OS - Agent Network Map Visualize all AI agents, their roles, connections, and activities ",
+  "category": "ai",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "ai-chatbot",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/ai-chatbot.sh",
+  "description": "BlackRoad OS - AI Chatbot Assistant Built-in AI helper for dashboards AI responses database ",
+  "category": "ai",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "ai-insights",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/ai-insights.sh",
+  "description": "BlackRoad OS - AI-Powered Insights Intelligent analysis and recommendations AI Insights generator ",
+  "category": "ai",
+  "interactive": false,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "alert-system",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/alert-system.sh",
+  "description": "BlackRoad OS - Real-Time Alert System Monitor conditions and send notifications Create files Initialize default rules if empty ",
+  "category": "monitoring",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "anomaly-detector",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/anomaly-detector.sh",
+  "description": "BlackRoad OS - Anomaly Detection System Real-time anomaly detection with ML-style analysis Initialize baseline ",
+  "category": "security",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "antimatter-containment",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/antimatter-containment.sh",
+  "description": "",
+  "category": "ai",
+  "interactive": false,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "api-health-check",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/api-health-check.sh",
+  "description": "BlackRoad OS - API Health Check Monitor all API endpoints with response times and status codes ",
+  "category": "infrastructure",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "api-integrations",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/api-integrations.sh",
+  "description": "BlackRoad OS - API Integration Layer Real data connections for all dashboards API endpoints and keys GitHub API calls ",
+  "category": "infrastructure",
+  "interactive": false,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "ar-overlay",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/ar-overlay.sh",
+  "description": "BlackRoad OS - Augmented Reality Dashboard Overlay Project real-time data into your environment AR position tracking ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "auto-agent-coordinator",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/auto-agent-coordinator.sh",
+  "description": "BlackRoad OS - AUTO AGENT COORDINATOR Autonomous coordination of all 10 AI executive agents Agent definitions with their tasks ",
+  "category": "ai",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "auto-ceo-mode",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/auto-ceo-mode.sh",
+  "description": "BlackRoad OS, Inc. - AUTO CEO MODE Fully autonomous corporate operations system Alexa Louise Amundson, CEO & Sole Incorporator CEO operational parameters ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "auto-recommendations",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/auto-recommendations.sh",
+  "description": "BlackRoad OS - Auto Recommendations System Intelligent auto-fix and optimization suggestions Generate recommendations based on system state ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "backup-status",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/backup-status.sh",
+  "description": "BlackRoad OS - Backup Status Monitor Track all backups across all systems and services ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "black-hole-simulator",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/black-hole-simulator.sh",
+  "description": "BlackRoad OS - Black Hole Simulator Simulate black holes and gravitational physics Calculate Schwarzschild radius Show black hole simulator ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "blackroad-beautiful-os",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/blackroad-beautiful-os.sh",
+  "description": "BlackRoad OS - BEAUTIFUL EDITION Actual buttons, cards, and beautiful UI elements! Color definitions ",
+  "category": "core",
+  "interactive": true,
+  "has_sound": true,
+  "has_api": true
+}
+,
+{
+  "name": "blackroad-cosmic-lottery",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/blackroad-cosmic-lottery.sh",
+  "description": "BlackRoad OS - COSMIC LOTTERY Dashboard The ultimate probability engine - watch your infrastructure compute the cosmos Color definitions Quantum probability calculations ",
+  "category": "core",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "blackroad-dashboard",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/blackroad-dashboard.sh",
+  "description": "BlackRoad OS Terminal Dashboard Color scheme matching the web interface Color definitions (RGB values from CSS) Accent colors Text colors ",
+  "category": "core",
+  "interactive": false,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "blackroad-full-os",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/blackroad-full-os.sh",
+  "description": "BlackRoad OS - Complete Operating System A WHOLE ASS OS in your terminal! Color definitions System state ",
+  "category": "core",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "blackroad-full-system",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/blackroad-full-system.sh",
+  "description": "BlackRoad OS - Full System Monitor with Auto-Refresh Complete infrastructure visualization with live updates Color definitions (matching HTML) ",
+  "category": "core",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "blackroad-live-dashboard",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/blackroad-live-dashboard.sh",
+  "description": "BlackRoad OS Live Infrastructure Dashboard Matches all Cloudflare domains and Pi sources Color definitions (matching HTML) ",
+  "category": "core",
+  "interactive": false,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "blackroad-master-control",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/blackroad-master-control.sh",
+  "description": "BlackRoad OS - MASTER CONTROL CENTER The ultimate unified dashboard - ALL devices, ALL services, ALL systems Check functions ",
+  "category": "core",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "blackroad-next-level-os",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/blackroad-next-level-os.sh",
+  "description": "BlackRoad OS - NEXT LEVEL A complete windowing operating system in terminal! Color definitions System state ",
+  "category": "core",
+  "interactive": true,
+  "has_sound": true,
+  "has_api": true
+}
+,
+{
+  "name": "blackroad-os",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/blackroad-os.sh",
+  "description": "BlackRoad OS - Main Entry Point The SMASHING way to access all dashboards Color definitions ",
+  "category": "core",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "blackroad-os95",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/blackroad-os95.sh",
+  "description": "BlackRoad OS 95 - Terminal Edition Windows 95 aesthetic meets CLI power Colors (Win95 palette + BlackRoad colors) ",
+  "category": "core",
+  "interactive": true,
+  "has_sound": true,
+  "has_api": false
+}
+,
+{
+  "name": "blackroad-ultimate",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/blackroad-ultimate.sh",
+  "description": "BlackRoad OS - ULTIMATE System Monitor With sound effects, animations, SSH integration, and API calls Color definitions (matching HTML) ",
+  "category": "core",
+  "interactive": true,
+  "has_sound": true,
+  "has_api": true
+}
+,
+{
+  "name": "blockchain-crypto",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/blockchain-crypto.sh",
+  "description": "BlackRoad OS - Blockchain & Crypto Integration Track crypto wallets and blockchain data Crypto prices (simulated) ",
+  "category": "ai",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "br-dashboards-enhanced",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/br-dashboards-enhanced.sh",
+  "description": "BlackRoad OS - Enhanced Dashboard Launcher Arrow key navigation, live preview, search, favorites! ",
+  "category": "monitoring",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "br-dashboards-ultra",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/br-dashboards-ultra.sh",
+  "description": "BlackRoad OS - ULTRA Enhanced Dashboard Launcher Live preview, collapsible categories, animations, keyboard shortcuts, breadcrumbs, quick jump, split-screen! Source theme system Dashboard data: name|emoji|description|script|category ",
+  "category": "monitoring",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "br-dashboards",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/br-dashboards.sh",
+  "description": "BlackRoad OS - Dashboard Launcher Quick access to all 28 terminal dashboards! ",
+  "category": "monitoring",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "brain-computer-interface",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/brain-computer-interface.sh",
+  "description": "BlackRoad OS - Brain-Computer Interface Monitor and control systems with your mind EEG bands ",
+  "category": "ai",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "build-pipeline",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/build-pipeline.sh",
+  "description": "BlackRoad OS - Build Pipeline Visualizer Track all CI/CD pipelines, builds, and deployments ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "business-operations",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/business-operations.sh",
+  "description": "BlackRoad OS - Master Business Operations Dashboard Unified interface for all business automation systems ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "consciousness-upload",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/consciousness-upload.sh",
+  "description": "",
+  "category": "general",
+  "interactive": false,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "corporate-agents",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/corporate-agents.sh",
+  "description": "BlackRoad OS - Corporate Agent Coordinator Manages autonomous AI agents for each corporate role Agent definitions ",
+  "category": "ai",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "cosmic-ray-detector",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/cosmic-ray-detector.sh",
+  "description": "BlackRoad OS - Cosmic Ray Detector Detect and visualize cosmic radiation events Particle types ",
+  "category": "scifi",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "cryogenic-stasis",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/cryogenic-stasis.sh",
+  "description": "",
+  "category": "general",
+  "interactive": false,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "crypto-portfolio-live",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/crypto-portfolio-live.sh",
+  "description": "BlackRoad OS - Crypto Portfolio Live Tracker Real-time crypto portfolio with price tracking, charts, and alerts Holdings ",
+  "category": "crypto",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "dark-matter-detector",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/dark-matter-detector.sh",
+  "description": "",
+  "category": "general",
+  "interactive": false,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "dashboard-builder",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/dashboard-builder.sh",
+  "description": "BlackRoad OS - Custom Dashboard Builder Interactive dashboard builder Initialize builder state ",
+  "category": "monitoring",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "dashboard-launcher",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/dashboard-launcher.sh",
+  "description": "BlackRoad OS - Master Dashboard Launcher Navigate and launch all 92+ dashboards Dashboard categories ",
+  "category": "monitoring",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "dashboard-marketplace",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/dashboard-marketplace.sh",
+  "description": "BlackRoad OS - Dashboard Marketplace Share and download community dashboards Dashboard catalog ",
+  "category": "monitoring",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "dashboard-templates",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/dashboard-templates.sh",
+  "description": "BlackRoad OS - Dashboard Templates System Pre-built templates for common use cases Template library ",
+  "category": "monitoring",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "dashboard-wrapper",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/dashboard-wrapper.sh",
+  "description": "BlackRoad OS - Dashboard Wrapper Adds keyboard shortcuts, breadcrumbs, and quick-jump to any dashboard Store the dashboard script to run Files Keyboard shortcuts shown at bottom ",
+  "category": "monitoring",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "database-monitor",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/database-monitor.sh",
+  "description": "BlackRoad OS - Database Monitor Monitor all databases: D1, KV stores, and data services ",
+  "category": "monitoring",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "deployment-timeline",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/deployment-timeline.sh",
+  "description": "BlackRoad OS - Deployment Timeline Visualize all deployments across time with Gantt-style charts ",
+  "category": "scifi",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "device-cloudflare",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/device-cloudflare.sh",
+  "description": "BlackRoad OS - Cloudflare Infrastructure Dashboard Monitor all Cloudflare services: 16 zones, 8 Pages, 8 KV, 1 D1 ",
+  "category": "infrastructure",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "device-github",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/device-github.sh",
+  "description": "BlackRoad OS - GitHub Infrastructure Dashboard Monitor all 15 orgs and 66 repositories GitHub Organizations ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "device-railway",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/device-railway.sh",
+  "description": "BlackRoad OS - Railway Deployments Dashboard Monitor all 12+ Railway projects ",
+  "category": "ai",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "device-raspberry-pi",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/device-raspberry-pi.sh",
+  "description": "BlackRoad OS - Raspberry Pi Fleet Dashboard Monitor all 4 Raspberry Pi devices in real-time Pi devices ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "dna-visualizer",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/dna-visualizer.sh",
+  "description": "BlackRoad OS - DNA Sequence Visualizer Visualize and analyze genetic sequences DNA bases ",
+  "category": "visualization",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "dns-record-viewer",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/dns-record-viewer.sh",
+  "description": "BlackRoad OS - DNS Record Viewer View all DNS records across all 16 zones ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "docker-fleet",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/docker-fleet.sh",
+  "description": "BlackRoad OS - Docker Fleet Manager Monitor all Docker containers across all devices ",
+  "category": "infrastructure",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "dyson-sphere",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/dyson-sphere.sh",
+  "description": "",
+  "category": "general",
+  "interactive": false,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "easter-eggs",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/easter-eggs.sh",
+  "description": "BlackRoad OS - Easter Eggs & Games Hidden games and fun surprises Snake game ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "export-system",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/export-system.sh",
+  "description": "BlackRoad OS - Data Export System Export dashboard data in multiple formats Export formats ",
+  "category": "monitoring",
+  "interactive": false,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "fusion-reactor",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/fusion-reactor.sh",
+  "description": "",
+  "category": "scifi",
+  "interactive": false,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "galaxy-viewer",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/galaxy-viewer.sh",
+  "description": "BlackRoad OS - Galaxy Cluster Viewer Explore galaxies and galaxy clusters Show galaxy viewer ",
+  "category": "scifi",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "genetic-engineering",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/genetic-engineering.sh",
+  "description": "BlackRoad OS - Genetic Engineering Lab CRISPR gene editing and genome engineering Show genetic engineering dashboard ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "github-repo-network",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/github-repo-network.sh",
+  "description": "GitHub Repository Network - FULL READ/WRITE ACCESS Access ALL repos across ALL orgs in ANY session Color definitions ",
+  "category": "infrastructure",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "heatmap-dashboard",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/heatmap-dashboard.sh",
+  "description": "BlackRoad OS - Heatmap Dashboard Visualize data density and patterns Heatmap characters (intensity levels) Color schemes ",
+  "category": "monitoring",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "holographic-display",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/holographic-display.sh",
+  "description": "BlackRoad OS - Holographic Display Mode 3D holographic data visualization Hologram data points ",
+  "category": "visualization",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "i18n-multilang",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/i18n-multilang.sh",
+  "description": "BlackRoad OS - Multi-Language Support (i18n) Support 10+ languages Load or set default language Translation database ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "interactive-drilldown",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/interactive-drilldown.sh",
+  "description": "BlackRoad OS - Interactive Drill-Down System Click numbers to drill into stats and see detailed views State Drill-down handler ",
+  "category": "general",
+  "interactive": false,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "invoice-automation",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/invoice-automation.sh",
+  "description": "BlackRoad OS - Invoice Automation Automated invoice generation, tracking, and payment reminders Company details ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "legal-automation",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/legal-automation.sh",
+  "description": "BlackRoad OS - Legal Automation System Automated contract generation, compliance tracking, and legal workflows Initialize compliance database ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "live-crypto-tracker",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/live-crypto-tracker.sh",
+  "description": "BlackRoad OS - LIVE Crypto Portfolio Tracker Real-time prices from CoinGecko API Portfolio holdings Historical prices (for 24h change calculation) ",
+  "category": "crypto",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "live-github-dashboard",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/live-github-dashboard.sh",
+  "description": "BlackRoad OS - LIVE GitHub Ecosystem Dashboard Real-time data from GitHub API ",
+  "category": "monitoring",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "live-system-dashboard",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/live-system-dashboard.sh",
+  "description": "BlackRoad OS - LIVE System Dashboard Real-time data from actual system metrics Cache for efficiency Get cached or fetch data ",
+  "category": "monitoring",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "log-aggregator",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/log-aggregator.sh",
+  "description": "BlackRoad OS - Log Aggregator Real-time log aggregation from all services and devices ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "matrix-simulation",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/matrix-simulation.sh",
+  "description": "",
+  "category": "general",
+  "interactive": false,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "memory-system-viz",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/memory-system-viz.sh",
+  "description": "BlackRoad OS - Memory System Visualization PS-SHA∞ memory chains, agent collaboration, live context ",
+  "category": "monitoring",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "multiverse-dashboard",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/multiverse-dashboard.sh",
+  "description": "BlackRoad OS - Multiverse Dashboard Monitor parallel universe infrastructure variations Universe characteristics ",
+  "category": "monitoring",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "nanobot-swarm",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/nanobot-swarm.sh",
+  "description": "BlackRoad OS - Nanobot Swarm Controller Control and monitor millions of nanobots Show nanobot controller ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "network-graph",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/network-graph.sh",
+  "description": "BlackRoad OS - Network Graph Visualizer Show service relationships and dependencies Service status ",
+  "category": "infrastructure",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "network-topology-3d",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/network-topology-3d.sh",
+  "description": "BlackRoad OS - Network Topology 3D Visualizer Beautiful ASCII 3D network map of entire infrastructure ",
+  "category": "infrastructure",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "neural-network-viz",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/neural-network-viz.sh",
+  "description": "BlackRoad OS - Neural Network Visualizer Watch neural networks learn in real-time Show neural network dashboard ",
+  "category": "ai",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "notification-center",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/notification-center.sh",
+  "description": "BlackRoad OS - Notification Center Centralized notification hub for all dashboards Initialize default settings ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "ocean-currents",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/ocean-currents.sh",
+  "description": "BlackRoad OS - Ocean Current Visualizer Map and analyze global ocean currents Show ocean currents dashboard ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "particle-physics",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/particle-physics.sh",
+  "description": "BlackRoad OS - Particle Physics Simulator Simulate particle collisions and interactions Particle types ",
+  "category": "scifi",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "performance-profiler",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/performance-profiler.sh",
+  "description": "BlackRoad OS - Performance Profiler Profile dashboard performance and resource usage Benchmark rendering performance ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "predictive-alerts",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/predictive-alerts.sh",
+  "description": "BlackRoad OS - Predictive Alerts System Predict and prevent issues before they happen Generate predictions ",
+  "category": "security",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "probability-manipulator",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/probability-manipulator.sh",
+  "description": "",
+  "category": "general",
+  "interactive": false,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "progress-animations",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/progress-animations.sh",
+  "description": "BlackRoad OS - Progress Animations Beautiful animated progress indicators Animation characters Spinner animation ",
+  "category": "general",
+  "interactive": false,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "quantum-simulator",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/quantum-simulator.sh",
+  "description": "BlackRoad OS - Quantum Computing Simulator Simulate quantum circuits in terminal Quantum state Initialize quantum state Show quantum dashboard ",
+  "category": "scifi",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "reality-debugger",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/reality-debugger.sh",
+  "description": "",
+  "category": "scifi",
+  "interactive": false,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "reality-switcher",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/reality-switcher.sh",
+  "description": "",
+  "category": "scifi",
+  "interactive": false,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "realtime-websocket",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/realtime-websocket.sh",
+  "description": "BlackRoad OS - Real-Time WebSocket Dashboard Live streaming data updates Simulate WebSocket data stream ",
+  "category": "scifi",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "responsive-layout",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/responsive-layout.sh",
+  "description": "BlackRoad OS - Responsive Layout System Auto-adjust dashboard layout based on terminal size Get terminal dimensions Determine layout mode based on screen size ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "satellite-tracker",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/satellite-tracker.sh",
+  "description": "BlackRoad OS - Satellite Tracking System Track satellites and space objects in real-time Show satellite tracker ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "screenshot-system",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/screenshot-system.sh",
+  "description": "BlackRoad OS - Screenshot System Capture terminal dashboard screenshots Capture terminal screen ",
+  "category": "monitoring",
+  "interactive": false,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "security-dashboard",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/security-dashboard.sh",
+  "description": "BlackRoad OS - Security Dashboard Comprehensive security monitoring across all systems ",
+  "category": "monitoring",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "seismic-monitor",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/seismic-monitor.sh",
+  "description": "BlackRoad OS - Seismic Activity Monitor Real-time earthquake detection and analysis Generate random earthquake ",
+  "category": "monitoring",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "services-ports-map",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/services-ports-map.sh",
+  "description": "BlackRoad OS - Services & Ports Map Monitor all running services, ports, and network endpoints ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "singularity-countdown",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/singularity-countdown.sh",
+  "description": "",
+  "category": "general",
+  "interactive": false,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "solar-system",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/solar-system.sh",
+  "description": "BlackRoad OS - Solar System Explorer Explore planets, moons, and celestial bodies Show solar system explorer ",
+  "category": "monitoring",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "sound-effects",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/sound-effects.sh",
+  "description": "BlackRoad OS - Sound Effects System Add audio feedback to dashboard interactions Sound library (using afplay on macOS, or beep sequences) ",
+  "category": "general",
+  "interactive": false,
+  "has_sound": true,
+  "has_api": false
+}
+,
+{
+  "name": "sparklines-everywhere",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/sparklines-everywhere.sh",
+  "description": "BlackRoad OS - Sparklines Everywhere Add mini charts to every metric Generate sparkline from data array ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "split-screen",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/split-screen.sh",
+  "description": "BlackRoad OS - Split Screen Dashboard Viewer View two dashboards side-by-side! Source theme Get terminal size Dashboard scripts ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "ssl-cert-tracker",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/ssl-cert-tracker.sh",
+  "description": "BlackRoad OS - SSL Certificate Tracker Monitor SSL certificates, expiry dates, and renewal status ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "stripe-automation",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/stripe-automation.sh",
+  "description": "BlackRoad OS - Stripe Payment Automation Fully automated payment processing, subscriptions, and revenue tracking Initialize SQLite databases ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "system-metrics-live",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/system-metrics-live.sh",
+  "description": "BlackRoad OS - System Metrics Live Real-time system performance monitoring across all devices Meter bar ",
+  "category": "monitoring",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "terminal-recorder",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/terminal-recorder.sh",
+  "description": "BlackRoad OS - Terminal Recorder Record and playback dashboard sessions Start recording ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "terraforming",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/terraforming.sh",
+  "description": "",
+  "category": "general",
+  "interactive": false,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "test-ai-network",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/test-ai-network.sh",
+  "description": "Quick test of AI Model Network visualization Color definitions ",
+  "category": "ai",
+  "interactive": false,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "themes",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/themes.sh",
+  "description": "BlackRoad OS - Theme System Switch between different color themes Theme storage Get current theme Set theme ",
+  "category": "general",
+  "interactive": false,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "time-loop-detector",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/time-loop-detector.sh",
+  "description": "",
+  "category": "scifi",
+  "interactive": false,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "time-machine",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/time-machine.sh",
+  "description": "BlackRoad OS - Time Machine Dashboard Travel through your infrastructure's history Initialize history Add historical events ",
+  "category": "scifi",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "universe-reset",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/universe-reset.sh",
+  "description": "",
+  "category": "scifi",
+  "interactive": false,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "voice-control",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/voice-control.sh",
+  "description": "BlackRoad OS - Voice Control System Control dashboards with voice commands Simulated voice recognition ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "weather-climate",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/weather-climate.sh",
+  "description": "BlackRoad OS - Weather & Climate Simulator Real-time weather patterns and climate modeling Weather conditions Show weather dashboard ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "wormhole-navigator",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/wormhole-navigator.sh",
+  "description": "BlackRoad OS - Wormhole Navigator Navigate through wormholes and exotic spacetime Show wormhole navigator ",
+  "category": "scifi",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "zoom-system",
+  "file": "/home/runner/work/blackroad-dashboards/blackroad-dashboards/zoom-system.sh",
+  "description": "BlackRoad OS - Zoom System Zoom in/out of dashboard sections Zoom state Zoom levels ",
+  "category": "monitoring",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+
+]
