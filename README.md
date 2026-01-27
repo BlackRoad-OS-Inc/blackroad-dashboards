@@ -207,7 +207,7 @@ The setup wizard will guide you through:
 ./launch.sh
 
 # Or browse all templates with visual previews:
-./preview-browser.sh              # 135 templates with search & filter
+./preview-browser.sh              # 142 templates with search & filter
 
 # Or run directly:
 ./blackroad-ultimate.sh --watch     # ULTIMATE edition
@@ -216,7 +216,7 @@ The setup wizard will guide you through:
 
 ### 🌐 Browse All Templates
 
-New! Visual preview browser for all 135 dashboard templates:
+New! Visual preview browser for all 142 dashboard templates:
 
 ```bash
 ./preview-browser.sh

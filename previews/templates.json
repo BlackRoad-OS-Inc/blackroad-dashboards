@@ -110,6 +110,16 @@
 }
 ,
 {
+  "name": "api-monitor",
+  "file": "api-monitor.sh",
+  "description": "BlackRoad OS - API Endpoint Monitor Monitor REST API endpoints, response times, and health Colors ",
+  "category": "monitoring",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
   "name": "ar-overlay",
   "file": "ar-overlay.sh",
   "description": "BlackRoad OS - Augmented Reality Dashboard Overlay Project real-time data into your environment AR position tracking ",
@@ -143,6 +153,16 @@
   "name": "auto-recommendations",
   "file": "auto-recommendations.sh",
   "description": "BlackRoad OS - Auto Recommendations System Intelligent auto-fix and optimization suggestions Generate recommendations based on system state ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "aws-resources",
+  "file": "aws-resources.sh",
+  "description": "BlackRoad OS - AWS Resources Dashboard Monitor AWS cloud resources, costs, and service health Colors ",
   "category": "general",
   "interactive": true,
   "has_sound": false,
@@ -360,6 +380,16 @@
 }
 ,
 {
+  "name": "color-palette",
+  "file": "color-palette.sh",
+  "description": "BlackRoad OS - Terminal Color Palette Display terminal color schemes and ANSI color codes Colors ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
   "name": "consciousness-upload",
   "file": "consciousness-upload.sh",
   "description": "",
@@ -564,6 +594,16 @@
   "file": "docker-fleet.sh",
   "description": "BlackRoad OS - Docker Fleet Manager Monitor all Docker containers across all devices ",
   "category": "infrastructure",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": true
+}
+,
+{
+  "name": "docker-monitor",
+  "file": "docker-monitor.sh",
+  "description": "BlackRoad OS - Docker Container Monitor Monitor Docker containers, images, and resource usage Colors ",
+  "category": "monitoring",
   "interactive": true,
   "has_sound": false,
   "has_api": true
@@ -850,6 +890,16 @@
 }
 ,
 {
+  "name": "mongodb-monitor",
+  "file": "mongodb-monitor.sh",
+  "description": "BlackRoad OS - MongoDB Monitor Monitor MongoDB database performance, collections, and operations Colors ",
+  "category": "monitoring",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
   "name": "multiverse-dashboard",
   "file": "multiverse-dashboard.sh",
   "description": "BlackRoad OS - Multiverse Dashboard Monitor parallel universe infrastructure variations Universe characteristics ",
@@ -930,6 +980,16 @@
 }
 ,
 {
+  "name": "npm-analytics",
+  "file": "npm-analytics.sh",
+  "description": "BlackRoad OS - NPM Package Analytics Track NPM package downloads, versions, and dependencies Colors ",
+  "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
   "name": "ocean-currents",
   "file": "ocean-currents.sh",
   "description": "BlackRoad OS - Ocean Current Visualizer Map and analyze global ocean currents Show ocean currents dashboard ",
@@ -954,6 +1014,16 @@
   "file": "performance-profiler.sh",
   "description": "BlackRoad OS - Performance Profiler Profile dashboard performance and resource usage Benchmark rendering performance ",
   "category": "general",
+  "interactive": true,
+  "has_sound": false,
+  "has_api": false
+}
+,
+{
+  "name": "postgresql-monitor",
+  "file": "postgresql-monitor.sh",
+  "description": "BlackRoad OS - PostgreSQL Monitor Monitor PostgreSQL database performance, connections, and queries Colors ",
+  "category": "monitoring",
   "interactive": true,
   "has_sound": false,
   "has_api": false

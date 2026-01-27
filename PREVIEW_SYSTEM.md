@@ -1,6 +1,6 @@
 # 🌐 Dashboard Template Browser
 
-Visual preview system for all BlackRoad OS dashboard templates. Browse, search, and preview 135 beautiful terminal dashboards before running them.
+Visual preview system for all BlackRoad OS dashboard templates. Browse, search, and preview 142 beautiful terminal dashboards before running them.
 
 ## 🚀 Quick Start
 
