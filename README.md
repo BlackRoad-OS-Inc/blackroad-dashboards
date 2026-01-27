@@ -1,6 +1,6 @@
 # 👻 BlackRoad OS Dashboards
 
-A collection of beautiful terminal dashboards for monitoring BlackRoad infrastructure.
+A collection of 149+ beautiful terminal dashboards for monitoring BlackRoad infrastructure, IoT devices, gaming servers, and more!
 
 ## 🎨 Dashboards
 
