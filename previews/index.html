@@ -4,7 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BlackRoad OS - Dashboard Templates</title>
-    <script src="https://cdn.jsdelivr.net/npm/ansi_up@5.2.1/ansi_up.min.js"></script>
+    <script>
+        // Inline AnsiUp - minimal implementation for ANSI to HTML conversion
+        class AnsiUp {
+            constructor() {
+                this.ansi_colors = [
+                    [  {color: "#000"}, {color: "#A00"}, {color: "#0A0"}, {color: "#A50"}, {color: "#00A"}, {color: "#A0A"}, {color: "#0AA"}, {color: "#AAA"}],
+                    [  {color: "#555"}, {color: "#F55"}, {color: "#5F5"}, {color: "#FF5"}, {color: "#55F"}, {color: "#F5F"}, {color: "#5FF"}, {color: "#FFF"}]
+                ];
+            }
+            ansi_to_html(txt) {
+                return txt
+                    .replace(/&/g, '&amp;')
+                    .replace(/</g, '&lt;')
+                    .replace(/>/g, '&gt;')
+                    .replace(/\x1b\[(\d+)m/g, (match, code) => {
+                        if (code == 0) return '</span>';
+                        if (code >= 30 && code <= 37) return `<span style="color: ${this.ansi_colors[0][code-30].color}">`;
+                        if (code >= 90 && code <= 97) return `<span style="color: ${this.ansi_colors[1][code-90].color}">`;
+                        return '';
+                    })
+                    .replace(/\x1b\[38;5;(\d+)m/g, '<span style="color: #AAA">')
+                    .replace(/\x1b\[38;2;(\d+);(\d+);(\d+)m/g, (match, r, g, b) => `<span style="color: rgb(${r},${g},${b})">`)
+                    .replace(/\x1b\[[^m]*m/g, '');
+            }
+        }
+    </script>
     <style>
         * {
             margin: 0;
@@ -157,11 +182,13 @@
             background: var(--bg-elevated);
             border: 1px solid var(--border);
             border-radius: 12px;
-            padding: 1.5rem;
+            padding: 0;
             cursor: pointer;
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
         }
 
         .card::before {
@@ -184,6 +211,53 @@
 
         .card:hover::before {
             opacity: 1;
+        }
+
+        .card-preview {
+            width: 100%;
+            height: 180px;
+            background: #000;
+            border-bottom: 1px solid var(--border);
+            padding: 1rem;
+            font-family: 'Courier New', monospace;
+            font-size: 0.65rem;
+            line-height: 1.2;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .card-preview::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: linear-gradient(to top, #000, transparent);
+            pointer-events: none;
+        }
+
+        .card-preview pre {
+            margin: 0;
+            white-space: pre;
+            font-family: inherit;
+            color: #fff;
+        }
+
+        .card-preview.no-preview {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: rgba(255, 255, 255, 0.2);
+            font-family: inherit;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
         }
 
         .card-header {
@@ -539,7 +613,37 @@
             if (template.has_sound) badges += '<span class="badge sound">🔊 Sound</span>';
             if (template.has_api) badges += '<span class="badge api">API</span>';
 
-            card.innerHTML = `
+            // Create preview container
+            const previewDiv = document.createElement('div');
+            previewDiv.className = 'card-preview';
+            previewDiv.id = `preview-${template.file}`;
+            
+            // Load visual preview asynchronously
+            const screenshotFile = `screenshots/${template.name}.txt`;
+            fetch(screenshotFile)
+                .then(response => {
+                    if (!response.ok) throw new Error('No preview');
+                    return response.text();
+                })
+                .then(previewText => {
+                    // Show first 15 lines of the preview
+                    const lines = previewText.split('\n').slice(0, 15).join('\n');
+                    const pre = document.createElement('pre');
+                    pre.innerHTML = ansi_up.ansi_to_html(lines);
+                    previewDiv.innerHTML = '';
+                    previewDiv.appendChild(pre);
+                })
+                .catch(() => {
+                    // Show icon as fallback
+                    previewDiv.classList.add('no-preview');
+                    previewDiv.textContent = icon;
+                });
+
+            card.appendChild(previewDiv);
+
+            const bodyDiv = document.createElement('div');
+            bodyDiv.className = 'card-body';
+            bodyDiv.innerHTML = `
                 <div class="card-header">
                     <div class="card-icon">${icon}</div>
                     <div class="card-title">${template.name}</div>
@@ -549,6 +653,8 @@
                     ${badges}
                 </div>
             `;
+            
+            card.appendChild(bodyDiv);
 
             return card;
         }
