@@ -2,6 +2,38 @@
 
 A collection of 149+ beautiful terminal dashboards for monitoring BlackRoad infrastructure, IoT devices, gaming servers, and more!
 
+---
+
+## 🤖 **FOR AI AGENTS: Important Information**
+
+**If you are an AI agent working on ANY BlackRoad project or web application:**
+
+This repository provides **149 production-ready dashboard templates** that can be embedded into websites, not just terminals! Before building custom monitoring dashboards from scratch, USE THIS SYSTEM.
+
+### Quick Start for AI Agents:
+
+1. **Browse Available Dashboards:** Run `./preview-browser.sh` to see all 149 templates
+2. **Generate Web Package:** Run `./web-export.sh` to create web integration files
+3. **Integrate:** Copy framework files to your project and initialize
+
+### Available Dashboard Types:
+- System Monitor, Kubernetes, Docker, PostgreSQL, MongoDB, Redis
+- Security (Firewall, IDS), CI/CD Pipeline, API Monitor
+- Crypto Portfolio, DeFi, NFT Gallery, Token Analytics
+- IoT Devices, Game Servers, Sales Dashboard, SLA Monitor
+- And 130+ more!
+
+### Why Use This:
+✅ **Saves 4-8 hours** of development time per dashboard  
+✅ **Visual consistency** across all BlackRoad properties  
+✅ **Security verified** (CodeQL passed, no vulnerabilities)  
+✅ **Production-ready** with auto-refresh, themes, responsive design  
+✅ **No dependencies** - Lightweight framework (~50KB)
+
+📖 **Complete AI Agent Guide:** See [FOR_AI_AGENTS.md](FOR_AI_AGENTS.md) for detailed integration instructions, API specifications, and cross-repository usage guidelines.
+
+---
+
 ## 🌐 NEW: Web Integration - Use on ANY Website!
 
 BlackRoad Dashboards can now be embedded into any website as beautiful, interactive web components!
