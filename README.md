@@ -1,5 +1,11 @@
 # 👻 BlackRoad OS Dashboards
 
+[![Bash](https://img.shields.io/badge/Bash-150%2B_dashboards-4EAA25.svg)](https://gnu.org/software/bash/)
+[![Terminal](https://img.shields.io/badge/terminal-TUI-FF6B2B.svg)](https://blackroad.io)
+[![ASCII](https://img.shields.io/badge/ASCII-art-00D4FF.svg)](https://blackroad.io)
+
+
+
 A collection of beautiful terminal dashboards for monitoring BlackRoad infrastructure.
 
 ## 🎨 Dashboards
