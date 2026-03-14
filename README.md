@@ -1,11 +1,5 @@
 # 👻 BlackRoad OS Dashboards
 
-[![Bash](https://img.shields.io/badge/Bash-150%2B_dashboards-4EAA25.svg)](https://gnu.org/software/bash/)
-[![Terminal](https://img.shields.io/badge/terminal-TUI-FF6B2B.svg)](https://blackroad.io)
-[![ASCII](https://img.shields.io/badge/ASCII-art-00D4FF.svg)](https://blackroad.io)
-
-
-
 A collection of beautiful terminal dashboards for monitoring BlackRoad infrastructure.
 
 ## 🎨 Dashboards
@@ -273,3 +267,22 @@ railway login
 **Created with 💜 for BlackRoad OS**
 
 *Colors: #FF9D00 #FF6B00 #FF0066 #FF006B #D600AA #7700FF #0066FF*
+
+---
+
+## 📜 License & Copyright
+
+**Copyright © 2026 BlackRoad OS, Inc. All Rights Reserved.**
+
+**CEO:** Alexa Amundson | **PROPRIETARY AND CONFIDENTIAL**
+
+This software is NOT for commercial resale. Testing purposes only.
+
+### 🏢 Enterprise Scale:
+- 30,000 AI Agents
+- 30,000 Human Employees
+- CEO: Alexa Amundson
+
+**Contact:** blackroad.systems@gmail.com
+
+See [LICENSE](LICENSE) for complete terms.
