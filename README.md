@@ -1,3 +1,11 @@
+# blackroad-dashboards
+
+> BlackRoad Dashboards — 150+ terminal dashboards in pure Bash. System metrics, AI agents, crypto, network topology, Docker fleet, security ops, quantum simulator, and more.
+
+Part of the [BlackRoad OS](https://blackroad.io) ecosystem — [BlackRoad-OS-Inc](https://github.com/BlackRoad-OS-Inc)
+
+---
+
 # 👻 BlackRoad OS Dashboards
 
 A collection of beautiful terminal dashboards for monitoring BlackRoad infrastructure.
